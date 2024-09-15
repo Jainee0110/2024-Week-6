@@ -1,0 +1,45 @@
+.nav-link:hover{
+    color: rgba(86, 149, 115) !important ;
+    font-weight: bolder !important; 
+}
+.header-nav{
+  padding-top: 9px;
+  padding-bottom: 9px;
+  @include media-breakpoint-up(lg){
+    padding-top: 37px;
+    padding-bottom: 37px;
+  }
+}
+.navbar-collapse{
+  height: 100vh;
+  @include media-breakpoint-up(sm){
+    height: auto;
+  }
+}
+.collapsed .brand {
+  transition: opacity 0.5s, visibility 0.5s;
+  opacity: 1;
+  visibility: visible;
+}
+.brand {
+  opacity: 0;
+  visibility: hidden;
+}
+.collapsed .open {
+  display: block;
+}
+.open {
+  display: none;
+}
+.collapsed .close {
+  display: none;
+}
+.close {
+  display: inline-block;
+}
+.bi::before{
+  font-weight: bold !important;
+}
+.navbar-toggler:focus{
+  box-shadow: none;
+}

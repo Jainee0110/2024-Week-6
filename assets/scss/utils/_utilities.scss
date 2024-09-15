@@ -1,0 +1,21 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        (
+          responsive: true,
+        )
+      ),
+    "border-bottom": (
+      responsive: true, 
+      property: border-bottom,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+        )
+    ),
+  )
+);
+
