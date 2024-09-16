@@ -12,7 +12,7 @@
 }
 .navbar-collapse{
   height: 100vh;
-  @include media-breakpoint-up(sm){
+  @include media-breakpoint-up(lg){
     height: auto;
   }
 }
