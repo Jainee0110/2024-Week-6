@@ -3,7 +3,7 @@
     background-position: center;
     background-size: cover;
     .nav-bg{
-        height: 100vh;
+        height: 100dvh; //Safari跑版修正
         padding-bottom: 48px;
     }
     .subscribe{
