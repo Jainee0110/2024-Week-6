@@ -112,5 +112,38 @@
         cursor: pointer;
     }
 }
+.swiper{
+    &-pagination-custom{
+        width: 232px !important;
+        &::after{
+            content: "";
+            width: 80px;
+            height: 1px;
+            background-color: #6C757D;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+    &-slide{
+        img{
+            height: 192px;
+            object-fit: cover;
+        }
+        a:hover{
+            font-style: italic;
+        }
+    }
+    &-button-disabled {
+        color: #dee2e6;
+        border-color: #dee2e6 !important;
+        &:hover {
+        cursor: default;
+        background-color: initial !important;
+      }
+    }
+    
+}
 
 
