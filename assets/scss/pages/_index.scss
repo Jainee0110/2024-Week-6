@@ -112,8 +112,24 @@
         cursor: pointer;
     }
 }
+.article{
+    padding-top: 48px;
+    padding-bottom: 45px;
+    @include media-breakpoint-up(lg){
+        padding-bottom: 77px;
+    }
+}
 .swiper{
-    &-pagination-custom{      
+    &-pagination-num{ 
+        @include media-breakpoint-up(lg){
+            position: absolute;
+            height: 28px;
+            left: 12px !important;
+            top: 68% !important;
+        }
+    }
+    &-pagination-custom{ 
+        width: 232px !important;     
         &::after{
             content: "";
             height: 1px;
@@ -121,11 +137,10 @@
             background-color: rgba(108, 117, 125, 0.6);
             position: absolute;
             top: 50%;
-            left: 59%;
+            left: 50%;
             transform: translate(-50%);
             @include media-breakpoint-up(lg){
                 width: 40px;
-                left: 50%;
             }
             @include media-breakpoint-up(xl){
                 width: 80px;
