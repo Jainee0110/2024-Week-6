@@ -7,21 +7,23 @@ import 'swiper/css/bundle';
 
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
-  slidesPerGroup: 2,
   spaceBetween: 15,
   breakpoints:{
     1400:{
       spaceBetween: 48,
       slidesPerView: 2,
+      slidesPerGroup: 2,
     },
     1200:{
       spaceBetween: 36,
       slidesPerView: 2,
+      slidesPerGroup: 2,
       
     },
     767:{
       spaceBetween: 24,
       slidesPerView: 2,
+      slidesPerGroup: 2,
     },
   },
   
