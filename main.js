@@ -6,16 +6,30 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
 const swiper = new Swiper(".mySwiper", {
-  //一次呈現幾張
-  slidesPerView: 2,
-  //一個群組內有幾張投影片
+  slidesPerView: 1,
   slidesPerGroup: 2,
-  spaceBetween: 48,
-
+  spaceBetween: 15,
+  breakpoints:{
+    1400:{
+      spaceBetween: 48,
+      slidesPerView: 2,
+    },
+    1200:{
+      spaceBetween: 36,
+      slidesPerView: 2,
+      
+    },
+    767:{
+      spaceBetween: 24,
+      slidesPerView: 2,
+    },
+  },
+  
   pagination: {
     el: ".swiper-pagination-num",
     type: "fraction",
   },
+  
   navigation: {
     nextEl: ".swiper-next",
     prevEl: ".swiper-prev",
