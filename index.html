@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>index</title>
-    <script type="module" crossorigin src="/2024-Week-6/assets/index-9da2c188.js"></script>
-    <link rel="stylesheet" href="/2024-Week-6/assets/index-c3da6aeb.css">
+    <script type="module" crossorigin src="/2024-Week-6/assets/index-0bd8fe4c.js"></script>
+    <link rel="stylesheet" href="/2024-Week-6/assets/index-11d1961d.css">
   </head>
   <body class="bg-primary-100">
     <nav class="navbar navbar-expand-lg bg-primary-100 py-0 fixed-top">
@@ -20,10 +20,15 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <form class="position-relative my-6 my-lg-0" role="search">
+        <!-- <form class="position-relative " role="search">
             <input class="form-control rounded-pill w-100" type="search" placeholder="搜尋文章" aria-label="Search" style="letter-spacing: 0.05em; width: 276px;">
             <button class="btn border-0 position-absolute translate-middle-y p-0" type="submit" style="right: 7%; top: 53%;" ><i class="bi bi-search" style="font-size: 24px; color: rgba(86, 149, 115, 1);"></i></button>
-        </form>  
+        </form>   -->
+        <div class="input-group w-100 my-6 my-lg-0">
+          <label for="input-group-text border-0">搜尋文章</label>
+          <input type="text" class="form-control border-0" id="search" aria-label="search">
+          <a href="#" class="input-group-text border-0" style=" padding-top: 9px; padding-bottom: 9px;"><i class="bi bi-search" style="font-size: 24px; color: rgba(86, 149, 115, 1); line-height: 1;"></i></a>
+        </div>
         <ul class="navbar-nav ms-auto align-items-lg-center no-scrollbar">
           <li class="nav-item me-lg-5 mb-6 mb-lg-0">
             <a class="nav-link text-gray-500 p-2 px-lg-5 py-lg-2" href="#">所有文章</a>
@@ -42,7 +47,7 @@
     </div>
   </nav>
     
-    <div class="container fixed-top d-none d-lg-block" style="top: 124px;">
+    <div class="container fixed-top d-none d-lg-block" style="top: 121px;">
       <div class="w-100 border-bottom-lg border-gray-300"></div>
     </div>
     <div class="index-nav py-lg-11">
