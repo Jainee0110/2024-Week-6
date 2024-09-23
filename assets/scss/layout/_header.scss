@@ -43,3 +43,41 @@
 .navbar-toggler:focus{
   box-shadow: none;
 }
+.input-group{
+  border: 1px solid #DEE2E6;
+  border-radius: 100px;
+  background: white;
+  @include media-breakpoint-up(lg){
+    max-width: 276px;
+  }
+}
+.input-group-text{
+  background: transparent;
+}
+label{
+  color: #ADB5BD; 
+  margin-left: 20px; 
+  margin-top: 11px; 
+  margin-bottom: 0px;
+  @include media-breakpoint-up(lg){
+  margin-top: 12px; 
+  margin-bottom: 6px;
+  }
+}
+.form-control{
+  padding-top: 9px;
+  padding-bottom: 8px;
+  @include media-breakpoint-up(lg){
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
+}
+.input-group:focus-within label{
+  color: #212529;
+  font-weight: bold ;
+}
+#search:focus{
+  outline: 0;
+  box-shadow: none;
+  border-color: transparent;
+}
